@@ -1,0 +1,346 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#team .event {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center; /* Center align the text */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+#team .event h2 {
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center; /* Center align the heading */
+}
+
+#team .event p {
+    margin-bottom: 10px;
+    text-align: center; /* Center align the paragraphs */
+}
+
+
+#home {
+    padding-top: 120px; /* Adjust this value according to your header's height */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container, footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #2a9bb8;
+}
+
+header h1 a {
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+}
+
+header h1 a:hover {
+    color: #2a9bb8; /* Text color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+
+.section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.section .container {
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+#home .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home .event {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+#home .event h3 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+#home .event p {
+    margin-bottom: 10px;
+}
+
+#home .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+#home .btn:hover {
+    background-color: #555;
+}
+
+.roadmap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.event {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+    text-align: left;
+}
+
+.event h3 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.event p {
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: auto;
+    width: 100%;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    header .container, footer .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    .token-info h2 {
+        font-size: 28px;
+    }
+
+    .event {
+        width: 100%;
+    }
+}
+
+#about .token-info {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+#about .token-info h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+#about .token-info p {
+    margin-bottom: 10px;
+}
+
+#about .token-info {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center; /* Center align the text */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+#about .token-info h2 {
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center; /* Center align the heading */
+}
+
+#about .token-info p {
+    margin-bottom: 10px;
+    text-align: center; /* Center align the paragraphs */
+}
+
+#home .event {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center; /* Center align the text */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+#home .event h3 {
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center; /* Center align the heading */
+}
+
+#home .event p {
+    margin-bottom: 10px;
+    text-align: center; /* Center align the paragraphs */
+}
+
+#home .btn {
+    margin-top: 20px;
+    width: auto;
+    display: inline-block;
+    padding: 10px 20px; /* Optional: Adjust padding as needed */
+}
+
+#whitepaper .event {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center; /* Center align the text */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+#whitepaper .event h2 {
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center; /* Center align the heading */
+}
+
+#whitepaper .event p {
+    margin-bottom: 10px;
+    text-align: center; /* Center align the paragraphs */
+}
+
+#whitepaper .btn {
+    margin-top: 20px;
+    width: auto;
+    display: inline-block;
+    padding: 10px 20px;
+}
